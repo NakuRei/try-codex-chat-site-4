@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="ほしぞら通信。管理人そらの日記と掲示板と、すこしのおまけ。1999年の七夕に開設した架空の個人ホームページです。">
+<title>夜の展望台 ─ ほしぞら通信</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+<script src="site.js" defer></script>
+</head>
+<body class="night observatory" data-page="observatory">
+<a class="skip" href="#main">本文へ</a>
+<main id="main" class="page">
+<p class="back"><a href="index.html">← ほしぞら通信にもどる</a></p>
+<header class="page-title"><h1>夜の展望台</h1></header>
+<p class="center">眠れない夜は、ここから星を見ています。</p>
+<p class="center small">遠くの光が、ときどき合図を送ってきます。<br>同じ順番で返してみると、何かあるかもしれません。</p>
+<div class="constellation" role="group" aria-label="4つの星">
+<button type="button" class="sky-star star-1" data-star="0" aria-label="1番の星" disabled>✦<span>1</span></button>
+<button type="button" class="sky-star star-2" data-star="1" aria-label="2番の星" disabled>✦<span>2</span></button>
+<button type="button" class="sky-star star-3" data-star="2" aria-label="3番の星" disabled>✦<span>3</span></button>
+<button type="button" class="sky-star star-4" data-star="3" aria-label="4番の星" disabled>✦<span>4</span></button>
+</div>
+<p class="center"><button id="play-stars" type="button" data-needs-js disabled>星の合図を見る</button></p>
+<p id="star-result" class="center" role="status">しばらく、空を眺めていよう。</p>
+<p class="center small"><label><input type="checkbox" id="still-stars"> 光る演出を使わず、番号で見る</label></p>
+<p data-found="stars" class="found-note" hidden>遠くの光が、こちらに合図を返してくれました。<br>「さいごの文字は <strong>み</strong>。今夜は、よく眠れますように。」</p>
+<hr>
+<p class="center small">空を見るのに、用事はいりません。<br>何回まちがえても、星は逃げません。</p>
+<footer>
+<p>［ <a href="index.html">ホームへ戻る</a> ｜ <a href="bbs.html">掲示板</a> ｜ <a href="links.html">リンク</a> ］</p>
+<p class="small">Copyright © 1999–2001 Sora. All starlight reserved.</p>
+</footer>
+</main>
+</body>
+</html>
