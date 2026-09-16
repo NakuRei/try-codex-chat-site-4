@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#080e2c">
+<meta name="description" content="2001年8月31日で更新が止まった個人ホームページ。日記、BBS、リンク切れの先に残された5つのかけらを探す、小さなブラウザー謎とき。">
+<title>ほしぞら通信 ★ ようこそ、インターネットの片すみへ</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+<script src="app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#content">本文へスキップ</a>
+<div class="desktop-label" aria-hidden="true">HOSHIZORA NETWORK <span>PERSONAL HOME PAGE / EST. 1999</span></div>
+<div class="browser">
+  <header class="titlebar"><span>▣ &nbsp;ほしぞら通信 - Hoshizora Navigator</span><div class="window-controls"><button data-action="help" aria-label="遊び方">?</button><button data-action="leave" aria-label="ウィンドウを閉じる（ゲーム内の演出）">×</button></div></header>
+  <div class="toolbar"><button data-action="back">◀ 戻る</button><a href="#home" class="classic-button">⌂ ホーム</a><span class="tool-divider"></span><button data-action="sound" id="sound" aria-pressed="false">♫ MIDI : OFF</button><button data-action="motion" id="motion" aria-pressed="false">✧ 演出 : ON</button><button data-action="hint" class="toolbar-help">ヒント [?]</button></div>
+  <div class="addressbar"><label for="address">Address</label><input id="address" readonly tabindex="-1" aria-label="ゲーム内の架空のアドレス" value="hoshizora.local/~sora/index.html"><span aria-hidden="true">★</span></div>
+  <div class="webpage">
+    <header class="masthead">
+      <div class="tiny-stars" aria-hidden="true">✦ · . ˚ ★ · . ✧ · . ˚</div>
+      <p class="welcome">＊ WELCOME TO MY HOMEPAGE ＊</p>
+      <h1><a href="#home">ほしぞら通信<span>★</span></a></h1>
+      <p class="tagline">インターネットの片すみで、きみを待っています。</p>
+      <div class="skyline" aria-hidden="true"><span class="moon"></span><span class="hill hill-one"></span><span class="hill hill-two"></span><span class="little-house">▥</span><span class="antenna">╂</span></div>
+      <div class="since">Since 1999.07.07</div>
+    </header>
+    <div class="marquee"><span>★ ようこそ！ ゆっくりしていってね ★ &nbsp; キリ番を踏んだ方はBBSまで！ &nbsp; ★ 相互リンク募集中です ★ &nbsp; 謎ときのヒントは右上の [?] からどうぞ ★</span></div>
+    <div class="site-layout">
+      <aside class="sidebar">
+        <section class="nav-box"><h2>★ CONTENTS ★</h2><nav aria-label="サイト内メニュー">
+          <a href="#home" data-page="home"><span>⌂</span> トップページ</a>
+          <a href="#about" data-page="about"><span>☺</span> 管理人について</a>
+          <a href="#diary" data-page="diary"><span>▤</span> きまぐれ日記 <b class="new">New!</b></a>
+          <a href="#bbs" data-page="bbs"><span>▣</span> 掲示板 / BBS</a>
+          <a href="#links" data-page="links"><span>∞</span> リンクの部屋</a>
+          <a href="#works" data-page="works"><span>⚒</span> 工事中の部屋</a>
+          <a href="#stars" data-page="stars"><span>☆</span> 夜の展望台</a>
+          <a href="#secret" data-page="secret" class="secret-nav"><span>⚿</span> ひみつのページ</a>
+        </nav></section>
+        <section class="memo-box"><h2>▣ ひろったかけら</h2><div id="fragments" class="fragment-strip" aria-label="集めたかけら"></div><p id="progress">まだ、なにもない。</p><a href="#memo">→ 探索メモをひらく</a></section>
+        <section class="side-note"><p class="pixel-cat" aria-hidden="true"> /\_/\\<br>( o.o )<br> &gt; ^ &lt;</p><p>ネットのむこうにも、<br>だれかの夜がある。</p><span class="online-led"></span> 接続中 <span class="dim">56.0 Kbps</span></section>
+        <div class="web-badges" aria-label="懐かしいウェブバッジ風の装飾"><span class="badge-html">&lt; HTML &gt;<b>手打ちです</b></span><span class="badge-night">★ TELEHODAI<b>夜更かし同盟</b></span></div>
+        <p class="save-note" id="save-note">進み具合は自動で保存されます。</p>
+      </aside>
+      <main id="content" tabindex="-1"></main>
+    </div>
+    <footer class="site-footer"><div>［ <a href="#home">HOME</a> | <a href="#bbs">BBS</a> | <button class="text-button" data-action="mail">MAIL</button> ］</div><p>このホームページはリンクフリーです。バナーのお持ち帰りは心の中で。</p><p>Copyright © 1999–2001 Sora. All starlight reserved.</p><p class="footer-small">IE 5.5 / 800 × 600 推奨 ……の気分で、いまのブラウザーからどうぞ。</p></footer>
+  </div>
+  <div class="statusbar"><span id="status">✓ ページの読み込みが完了しました。</span><span>小さなインターネット &nbsp; ◢</span></div>
+</div>
+<p class="below-browser">あのころの「また明日」は、まだここにある。</p>
+<dialog id="dialog" aria-labelledby="dialog-title"><div class="dialog-title"><span id="dialog-title"></span><button data-action="close-dialog" aria-label="閉じる">×</button></div><div id="dialog-body"></div><div class="dialog-footer"><button data-action="close-dialog" autofocus>閉じる</button></div></dialog>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<noscript><div class="noscript">この謎ときはJavaScriptを使用します。ブラウザーのJavaScriptを有効にして、もう一度アクセスしてください。</div></noscript>
+</body>
+</html>
